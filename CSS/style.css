@@ -1,0 +1,162 @@
+/* My First Website CSS Code */
+
+body{
+	font-family: 'Rokkitt', serif; /* google fonts style*/
+}
+#wrapper {                 /* To adjust with mobile/desktop screen */
+	text-align: center;
+	max-width: 940px;
+	margin: 0 auto 0 auto;
+	padding: 0 5% 0 5%;
+}
+
+#logo{
+	margin: 0;
+	text-align: center;
+	font-family: 'Great Vibes', cursive;   /*Google Fonts style*/
+}
+
+#logo a{
+	color: black;
+}
+
+#logo h1{
+	font-size: 2em;
+}
+
+#logo h2{
+	font-size: 1.25em; /*1em = 16px*/
+	font-weight: normal;
+}
+
+
+/*Link colors and properties */
+a{
+	color: #fb3c3c;
+}
+
+a:visited{
+	color: #fb3c3c;
+}
+
+header a{
+	text-decoration: none; /* just to remove underline */
+}
+
+/* Navigation Section */
+
+nav{
+	text-align: center;
+}
+.NavigationLinks{
+	font-size: 18px;
+
+}
+
+nav a:hover{
+	font-weight: bold; /* just to highlight when put cursor on */
+}
+
+
+nav ul li {
+	padding: 0;
+	margin: 0 40px 10px 0;
+	display: inline-block;
+}
+
+/* Footer Section */
+
+footer {
+	margin-top: 50px;
+	font-size: 1.26em;
+	color: grey;
+	text-align: center;
+	clear: both;
+}
+
+footer p{
+	font-style: italic;
+	text-align: center;
+}
+
+footer a{
+	text-decoration: none;
+}	
+
+
+
+.socialicons {
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
+
+/* Portfolio Style */
+
+img{
+	max-width: 100%;
+}
+
+#Portfolio{              /* By doing this Images get fit to the screen of mobile/laptop */
+	list-style: none;
+}
+
+#Portfolio li{
+	width: 95%;
+	margin: 10px 0 2.5% 0 2.5%;
+}
+
+/* Style for About Page */
+
+.profilepic{
+	max-width: 200px;
+	margin: 5px;
+	display: block;
+}
+
+#wrapper  h3,p{
+	text-align: left;
+}
+
+/* Blog Page Style */
+
+.blogprofilepic{
+	max-width: 120px;
+	margin: 5px;
+	display: block;
+	border-radius: 150%;
+}
+
+.sidebar ul li{
+	list-style: none;
+}
+
+.sidebar{
+	float: right;  /* Just to display phots and text side of the page */
+	margin: 0 5% 0 5%;
+}
+
+.sidebar h3{
+	text-align: center;
+}
+
+@media screen and (min-width: 600px){
+	#Portfolio li{
+		float: left;
+		width: 45%;
+		margin: 2.5%;
+	}
+	
+	.sidebar{
+		float: right;
+	}
+}
+
+@media screen and (min-width: 900px){
+	#Portfolio li{
+		float: left;
+		width: 28%;
+		margin: 2.5%;
+	}
+}
